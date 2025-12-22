@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЧЕМОДАН4ИК - Настройки профиля</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script type="module" src="js/profileSettingsMain.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_container">
+            <a href="index.html" class="logo-link">
+                <h1>ЧЕМОДАН4ИК</h1>
+            </a>
+            <img src="images/suitcase_icon.png" alt="Иконка чемоданчика" class="icon" style="width:30px;height:65px">
+        </div>
+        <div class="header_container">
+            <div class="nav-links">
+                <a href="order-history.html" class="nav-link">История заказов</a>
+                <a href="profile-settings.html" class="nav-link">Настройки</a>
+            </div>
+            <span id="name">Адолат Бердиева</span>
+            <img src="images/profile_icon.png" alt="Иконка профиля" class="icon" style="margin-right:35px;width:30px;height:30px">
+        </div>
+    </div>
+    
+    <div class="back">
+        <div class="header_container">
+            <a href="index.html" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                <img src="images/back_arrow.png" alt="Иконка стрелочки назад" class="icon" style="width:30px;height:30px">
+            </a>
+            <span id="name" style="font-size:25">Настройки профиля</span>
+        </div>
+    </div>
+    
+    <div class="page">
+        <div class="profile-section">
+            <div class="section-title">Личная информация</div>
+            
+            <div class="avatar-upload">
+                <img src="images/profile_icon.png" alt="Аватар" class="profile-avatar">
+                <div>
+                    <button id="changeAvatarBtn" class="upload-btn">Изменить фото</button>
+                    <p class="small_letters" style="color: #666; margin-top: 5px;">
+                        Рекомендуемый размер: 100x100 пикселей
+                    </p>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label class="form-label">Имя</label>
+                    <input type="text" id="nameInput" class="form-input" placeholder="Введите ваше имя">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Фамилия</label>
+                    <input type="text" id="surnameInput" class="form-input" placeholder="Введите вашу фамилию">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Электронная почта</label>
+                <input type="email" id="emailInput" class="form-input" placeholder="example@email.com">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Телефон</label>
+                <input type="tel" id="phoneInput" class="form-input" placeholder="+7 (000) 000-00-00">
+            </div>
+            
+            <button id="savePersonalInfoBtn" class="save-btn">Сохранить изменения</button>
+        </div>
+        
+        <div class="profile-section">
+            <div class="section-title">Настройки уведомлений</div>
+            
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="emailNotifications" checked>
+                    <label for="emailNotifications" class="checkbox-label">
+                        Получать уведомления по электронной почте
+                    </label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="smsNotifications" checked>
+                    <label for="smsNotifications" class="checkbox-label">
+                        Получать SMS-уведомления
+                    </label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="pushNotifications">
+                    <label for="pushNotifications" class="checkbox-label">
+                        Push-уведомления в браузере
+                    </label>
+                </div>
+            </div>
+            
+            <button id="saveNotificationsBtn" class="save-btn">Сохранить настройки</button>
+        </div>
+        
+        <div class="profile-section">
+            <div class="section-title">Настройки приложения</div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label class="form-label">Язык интерфейса</label>
+                    <select id="languageSelect" class="form-input">
+                        <option value="ru">Русский</option>
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Валюта</label>
+                    <select id="currencySelect" class="form-input">
+                        <option value="RUB">Российский рубль (₽)</option>
+                        <option value="USD">Доллар США ($)</option>
+                        <option value="EUR">Евро (€)</option>
+                        <option value="GBP">Фунт стерлингов (£)</option>
+                    </select>
+                </div>
+            </div>
+            
+            <button id="saveAppSettingsBtn" class="save-btn">Сохранить настройки</button>
+        </div>
+        
+        <div class="profile-section" style="border-color: #ff6b6b;">
+            <div class="section-title" style="color: #ff6b6b;">Опасная зона</div>
+            
+            <div style="margin-bottom: 20px;">
+                <p class="medium_letters" style="color: #666; margin-bottom: 10px;">
+                    Удаление аккаунта — это необратимое действие. Все ваши данные будут удалены без возможности восстановления.
+                </p>
+            </div>
+            
+            <button id="deleteAccountBtn" style="background-color: #ff6b6b; color: white; border: none; padding: 12px 30px; border-radius: 8px; font-size: 16px; cursor: pointer;">
+                Удалить аккаунт
+            </button>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-left">
+            <p>По всем претензиям обращаться<br>
+            к Л.Бенидовской, А.Коротченко<br>
+            и В.Совгирь, но лучше не надо :)</p>
+        </div>
+    
+        <div class="footer-center">
+            <img src="images/heart_icon.png" alt="Сердечко" class="footer-icon">
+        </div>
+    
+        <div class="footer-right">
+            <p>Контакты<br>
+            Почта: avkorotchenko@edu.hse.ru<br>
+            Телефон: +71234567890</p>
+        </div>
+    </div>
+</body>
+
+</html>
