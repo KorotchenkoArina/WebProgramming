@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<div id="modal-root"></div>
+<body>
+    <div class="header">
+        <div class="header_container">
+            <h1>ЧЕМОДАН4ИК</h1>
+            <img src="images/suitcase_icon.png" alt="Иконка чемоданчика" class="icon" style="width:30px;height:65px">
+        </div>
+        <div class="header_container">
+            <span id="name">Адолат Бердиева</span>
+            <img src="images/profile_icon.png" alt="Иконка профиля" class="icon" style="margin-right:35px;width:30px;height:30px">
+        </div>
+    </div>
+    <div class="back">
+        <div class="header_container">
+            <img src="images/back_arrow.png" alt="Иконка стрелочки назад" class="icon" style="width:30px;height:30px">
+            <span id="name" style="font-size:25">Детали заказа</span>
+        </div>
+    </div>
+    <div class="page">
+        <div class = "container">
+            <img src="images/kpss.jpg" alt="Картинка места" class="place_image">
+        </div>
+        <p class="big_letters">кафе "КПСС"</p>
+        <p class="medium_letters">пр. Славы 50, г. Сыктывкар</p>
+        <div>
+            <button id="chatBtn">
+                <p class="medium_letters">Перейти в чат</p>
+            </button>
+
+            <button id="reviewBtn">
+                <p class="medium_letters">Оставить отзыв</p>
+            </button>
+
+        </div>
+        <div style="display:inline-flex; width:100%">
+            <div class="box" style="width:100%;margin-right: 4%; display: flex; justify-content: flex-start;flex-direction: column;">
+                <div class="date">
+                    <p class="medium_large_letters" style="margin-top:5px;margin-bottom:5px;margin-left:8px;margin-right:8px;">01.03.2025</p>
+                </div>
+                <div style="display:inline-flex;align-items: center; justify-content: space-between; width:100%; margin-top: 20px;margin-bottom: 5px;">
+                    <p class="small_letters" style="color:#D2649A">принести</p>
+                    <p class="small_letters" style="color:#D2649A">забрать</p>
+                </div>
+                <div style="display: inline-flex; align-items: center; justify-content: space-between;width:100%; margin-bottom: 20px;">
+                    <p class="medium_large_letters" style="color:black">16:00</p>
+                    <div class="line"></div>
+                    <p class="medium_large_letters" style="color:#743050">4 часа</p>
+                    <div class="line"></div>
+                    <p class="medium_large_letters" style="color:black">20:00</p>
+                </div>
+                <p class="medium_large_letters" style="color:#743050">3 чемодана до 25 кг</p>
+            </div>
+            <div class="box" style="width:40%;">
+                <p class="medium_large_letters" style="margin-bottom:5px">Стоимость</p>
+                <p class="medium_large_letters" style="color:#743050;margin-bottom:5px">1220 рублей</p>
+                <div class="paid" style="margin-top: 50px; width: 95%;">
+                    <p class="medium_large_letters" style="color:white; padding: 6px 30px;box-sizing: border-box;">Оплачено</p>
+                </div>
+            </div>
+        </div>
+        <p class="large_letters"> Детали оплаты</p>
+        <div class="box full-box">
+            <div class="box-content">
+                <!-- Левая часть -->
+                <div class="info-columns">
+                    <div class="info-column">
+                        <p class="medium_large_letters">Стоимость</p>
+                        <p class="medium_large_letters">Статус оплаты</p>
+                        <p class="medium_large_letters">Способ оплаты</p>
+                        <p class="medium_large_letters">Банк транзакции</p>
+                        <p class="medium_large_letters">Реквизиты</p>
+                    </div>
+
+                    <div class="info-column">
+                        <p class="medium_large_letters" style="color:#743050">1220 рублей</p>
+                            <div class="paid" style="width:fit-content; padding: 5px 5px">
+                                <p class="medium_large_letters" style="color:white">Оплачено</p>
+                            </div>
+                            <p class="medium_large_letters" style="color:#743050">Карта</p>
+                            <p class="medium_large_letters" style="color:#743050">Альфа Банк</p>
+                            <p class="medium_large_letters" style="color:#743050">200*************72</p>
+                    </div>
+                </div>
+
+                <!-- Правая часть -->
+                <button id="receiptBtn" class="medium_letters">Посмотреть чек</button>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    <div class="footer-left">
+        <p>По всем претензиям обращаться<br>
+        к Л.Бенидовской, А.Коротченко<br>
+        и В.Совгирь, но лучше не надо :)</p>
+    </div>
+
+    <div class="footer-center">
+        <img src="images/heart_icon.png" alt="Сердечко" class="footer-icon">
+    </div>
+
+    <div class="footer-right">
+        <p>Контакты<br>
+        Почта: avkorotchenko@edu.hse.ru<br>
+        Телефон: +71234567890</p>
+    </div>
+</div>
+</body>
+
+</html>
