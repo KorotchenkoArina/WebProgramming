@@ -1,0 +1,21 @@
+/* Основные стили приложения */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #fff;
+}
+
+:root {
+  --primary-color: #743050;
+  --primary-dark: #8E3E63;
+  --secondary-color: #F6FAB9;
+  --accent-color: #D2649A;
+  --success-color: #A7D477;
+  --background-light: #F7F7F7;
+  --error-color: #ff6b6b;
+}

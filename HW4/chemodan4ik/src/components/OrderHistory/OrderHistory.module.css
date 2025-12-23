@@ -1,0 +1,279 @@
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 28px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: var(--background-light);
+  border-radius: 15px;
+  border: 1px solid var(--primary-color);
+}
+
+.emptyText {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.ordersList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.orderCard {
+  border: 1px solid var(--primary-color);
+  border-radius: 15px;
+  padding: 20px;
+  background-color: var(--background-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.orderCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.orderPlace {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.orderAddress {
+  font-size: 18px;
+  color: #666;
+}
+
+.orderStatus {
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+.statusCompleted {
+  background-color: var(--success-color);
+}
+
+.statusActive {
+  background-color: #4A90E2;
+}
+
+.statusCancelled {
+  background-color: var(--error-color);
+}
+
+.statusUnknown {
+  background-color: #666;
+}
+
+.orderDetailsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.detailLabel {
+  font-size: 14px;
+  color: #666;
+}
+
+.detailValue {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.orderActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.detailsButton {
+  padding: 8px 20px;
+  background-color: var(--background-light);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.detailsButton:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.repeatButton {
+  padding: 8px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.repeatButton:hover {
+  background-color: var(--primary-dark);
+}
+
+.statsCard {
+  border: 1px solid var(--primary-color);
+  border-radius: 20px;
+  background-color: var(--background-light);
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.statsTitle {
+  color: var(--primary-color);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.statItem {
+  text-align: center;
+}
+
+.statLabel {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.statValue {
+  font-size: 24px;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.orderDetailsContent {
+  margin: 20px 0;
+}
+
+.orderDetailsContent p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.repeatConfirmContent {
+  margin: 20px 0;
+}
+
+.repeatConfirmContent p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.modalActions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.closeModalButton {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirmButton {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirmButton:hover {
+  background-color: var(--primary-dark);
+}
+
+.cancelButton {
+  padding: 10px 20px;
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancelButton:hover {
+  background-color: #bbb;
+}
+
+@media (max-width: 768px) {
+  .orderDetailsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .orderActions {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .detailsButton,
+  .repeatButton {
+    width: 100%;
+  }
+  
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .modalActions {
+    flex-direction: column;
+  }
+  
+  .confirmButton,
+  .cancelButton {
+    width: 100%;
+  }
+}
