@@ -1,0 +1,222 @@
+body{
+    margin:0;
+    padding: 0;
+}
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height: 70px;
+    background-color: #8E3E63;
+    color: #F6FAB9;
+}
+.header_container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: 100%;
+    margin:0;
+}
+.page{
+    margin-left:20%;
+    margin-right:20%;
+    margin-top:10px;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap:15px;
+    margin-bottom: 50px;
+}
+.back{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    height: 70px;
+    background-color: #F7F7F7;
+    color: #743050;    
+}
+p{
+    margin:0;
+}
+h1{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 42px;
+    margin-left:20px;
+}
+#name{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+.icon{
+    margin: 20px;
+}
+.place_image{
+    width: 650px;
+    height: 300 px;
+}
+.big_letters{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+}
+.medium_letters{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+.medium_large_letters{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+}
+.large_letters{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: bold;
+    font-size: 28px;
+}
+.small_letters{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+}
+button{
+    border:#743050;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 0.25);
+    margin-right: 10px;
+    background-color: #F6FAB9;
+    color: #743050;
+    width:245px;
+    height:55px;
+}
+button:hover{
+    border:#743050;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 0.25);
+    margin-right: 10px;
+    background-color:#8E3E63;
+    color: white;
+    width:245px;
+    height:55px;
+}
+.box{
+    border:#743050;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    background-color: #F7F7F7;
+    display:flex; 
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.paid {
+    background-color: #A7D477;
+    border: 1px solid #A7D477;
+    border-radius: 50px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.line{
+    border:#D2649A;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1px;
+    background-color: #D2649A;
+    width:20%;
+}
+.date{
+    background-color: #743050;
+    border-radius: 30px;
+    justify-content: center;
+    color:white;
+}
+.full-box {
+    width: 100%;
+}
+
+.box-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Левая зона с двумя колонками */
+.info-columns {
+    display: flex;
+    gap: 40px;
+}
+
+.info-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Кнопка справа сверху */
+.box-content button {
+    align-self: flex-start;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    height: 70px;
+    background-color: #8E3E63;
+    color: #F6FAB9;
+    border-top: 1px solid #743050; /* тонкая граница сверху */
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.footer-left,
+.footer-right {
+    max-width: 35%;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon {
+    width: 40px;
+    height: 40px;
+}
