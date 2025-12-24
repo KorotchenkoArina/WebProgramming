@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЧЕМОДАН4ИК - История заказов</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script type="module" src="js/orderHistoryMain.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_container">
+            <a href="index.html" class="logo-link">
+                <h1>ЧЕМОДАН4ИК</h1>
+            </a>
+            <img src="images/suitcase_icon.png" alt="Иконка чемоданчика" class="icon" style="width:30px;height:65px">
+        </div>
+        <div class="header_container">
+            <div class="nav-links">
+                <a href="order-history.html" class="nav-link">История заказов</a>
+                <a href="profile-settings.html" class="nav-link">Настройки</a>
+            </div>
+            <span id="name">Адолат Бердиева</span>
+            <img src="images/profile_icon.png" alt="Иконка профиля" class="icon" style="margin-right:35px;width:30px;height:30px">
+        </div>
+    </div>
+    
+    <div class="back">
+        <div class="header_container">
+            <a href="index.html" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                <img src="images/back_arrow.png" alt="Иконка стрелочки назад" class="icon" style="width:30px;height:30px">
+            </a>
+            <span id="name" style="font-size:25">История заказов</span>
+        </div>
+    </div>
+    
+    <div class="page">
+        <div class="large_letters">Ваши предыдущие заказы</div>
+        <p class="medium_letters" style="color: #666; margin-bottom: 30px;">
+            Здесь вы можете посмотреть все ваши предыдущие заказы
+        </p>
+        
+        <div id="ordersContainer">
+            <!-- Заказы будут загружены через JavaScript -->
+        </div>
+        
+        <div class="order-stats box" style="margin-top: 30px;">
+            <p class="medium_large_letters" style="color: #743050; margin-bottom: 15px;">
+                Статистика заказов
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; width: 100%;">
+                <div>
+                    <p class="small_letters">Всего заказов</p>
+                    <p class="medium_large_letters" id="totalOrders">0</p>
+                </div>
+                <div>
+                    <p class="small_letters">Общая сумма</p>
+                    <p class="medium_large_letters" id="totalAmount">0 ₽</p>
+                </div>
+                <div>
+                    <p class="small_letters">Средний чек</p>
+                    <p class="medium_large_letters" id="averageOrder">0 ₽</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-left">
+            <p>По всем претензиям обращаться<br>
+            к Л.Бенидовской, А.Коротченко<br>
+            и В.Совгирь, но лучше не надо :)</p>
+        </div>
+    
+        <div class="footer-center">
+            <img src="images/heart_icon.png" alt="Сердечко" class="footer-icon">
+        </div>
+    
+        <div class="footer-right">
+            <p>Контакты<br>
+            Почта: avkorotchenko@edu.hse.ru<br>
+            Телефон: +71234567890</p>
+        </div>
+    </div>
+</body>
+
+</html>
