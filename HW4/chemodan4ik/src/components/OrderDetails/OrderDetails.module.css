@@ -1,0 +1,349 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.backSection {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  background-color: var(--background-light);
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  border-radius: 8px;
+  padding: 0 20px;
+}
+
+.backContent {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.backIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.backTitle {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.placeImageContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.placeImage {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.placeName {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.placeAddress {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.actionButton {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.actionButton:hover {
+  background-color: var(--primary-dark);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.buttonText {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.orderInfo {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.orderDetails {
+  flex: 1;
+  border: 1px solid var(--primary-color);
+  border-radius: 20px;
+  background-color: var(--background-light);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dateBadge {
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  color: white;
+  padding: 8px 16px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.dateText {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.timeLabels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.timeLabel {
+  font-size: 18px;
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+.timeLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.timeValue {
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+}
+
+.duration {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: var(--accent-color);
+  margin: 0 10px;
+}
+
+.luggageInfo {
+  font-size: 24px;
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.priceSection {
+  width: 40%;
+  border: 1px solid var(--primary-color);
+  border-radius: 20px;
+  background-color: var(--background-light);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.priceLabel {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.priceValue {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.paidBadge {
+  background-color: var(--success-color);
+  border: 1px solid var(--success-color);
+  border-radius: 50px;
+  color: white;
+  padding: 6px 30px;
+  font-size: 24px;
+  font-weight: 500;
+  width: 95%;
+  text-align: center;
+  margin-top: auto;
+}
+
+.paidBadgeSmall {
+  background-color: var(--success-color);
+  border: 1px solid var(--success-color);
+  border-radius: 50px;
+  color: white;
+  padding: 5px 15px;
+  font-size: 24px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.paidText {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.paymentDetails {
+  border: 1px solid var(--primary-color);
+  border-radius: 20px;
+  background-color: var(--background-light);
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.paymentColumns {
+  display: flex;
+  gap: 40px;
+}
+
+.paymentColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.paymentLabel {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.paymentValue {
+  font-size: 24px;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.receiptButton {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 12px 24px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.receiptButton:hover {
+  background-color: var(--primary-dark);
+  color: white;
+}
+
+.receiptContent {
+  margin: 20px 0;
+}
+
+.receiptContent p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.receiptDivider {
+  margin: 20px 0;
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.receiptActions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.printButton {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.printButton:hover {
+  background-color: var(--primary-dark);
+}
+
+.closeButton {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.closeButton:hover {
+  background-color: #bbb;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .orderInfo {
+    flex-direction: column;
+  }
+  
+  .priceSection {
+    width: 100%;
+  }
+  
+  .paymentDetails {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .paymentColumns {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .actionButtons {
+    flex-direction: column;
+  }
+}
